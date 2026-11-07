@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 2px solid black;
+    width: 1000px;
+    margin: 0 auto;
+}
+.info {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+.info-img{
+    /* border: 2px solid rgb(31, 13, 230); */
+    width: 40%;
+    position: relative;
+
+}
+.info-img .portfolio{
+    width: 100%;
+}
+.info-description {
+    /* border: 2px solid orange; */
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+.info-description:hover {
+    color: purple;
+}
+.info-description-btns button {
+    margin-right: 10px;
+    background-color: transparent;
+    border: 1px solid purple;
+    border-radius: 2px;
+    padding: 3px 5px;
+    color: purple;
+}
+.info-description-btns button:hover{
+    background-color: purple;
+    color: white;
+}
+.info-description-btns button:focus{
+    background-color: rgb(247, 16, 16);
+    color: rgb(249, 245, 249);
+}
+/* #project {
+    background-color: purple;
+    color: white;
+} */
+.info-img-icons {
+    background-color: rgb(248, 244, 244);
+    border-radius: 5px;
+    position: absolute;
+    
+    bottom: -10px; 
+    right: 100px;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+.info-img-icons img {
+    width: 20%;
+}
+a:active {
+    color: rgb(15, 194, 42);
+}
+.list li:nth-child(2n) {
+    color: red;
+}
+.list li:nth-child(2n+1) {
+    color: blue;
+}
+.list li:nth-child(3n) {
+    color: green;
+}
+.info-description p:first-of-type{
+    color: rgb(15, 194, 42);
+}
+.info-description p:not(.short) {
+    color: rgb(15, 194, 42);
+}
+.info-description h3::before{
+    content: "Hello, ";
+    color: rgb(194, 15, 15);
+    background-color: rgb(155, 185, 63);
+    border-radius: 20px;
+    text-align: center;
+    padding: 2px;
+    }
